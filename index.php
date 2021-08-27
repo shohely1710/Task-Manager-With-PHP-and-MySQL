@@ -1,3 +1,8 @@
+<?php
+    include('config/constants.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,12 +16,12 @@
 
     <!-- Menu Starts Here -->
     <div class="menu">
-        <a href="index.php">Home</a>
+        <a href="<?php echo SITEURL; ?>">Home</a>
         <a href="#">To Do</a>
         <a href="#">Doing</a>
         <a href="#">Done</a>
 
-        <a href="manage-list.php">Manage Lists</a>
+        <a href="<?php echo SITEURL; ?>manage-list.php">Manage Lists</a>
     </div>
      <!-- Menu Ends Here -->
 

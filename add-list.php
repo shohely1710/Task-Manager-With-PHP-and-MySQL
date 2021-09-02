@@ -9,11 +9,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager with PHP and MySQL</title>
+    <link rel="stylesheet" href="<?php echo SITEURL; ?>css/style.css" />
 </head>
 <body>
+    <div class="wrapper">
     <h1>TASK MANAGER</h1>
-    <a href="<?php echo SITEURL; ?>">Home</a>
-    <a href="<?php echo SITEURL; ?>manage-list.php">Manage Lists</a>
+    <a class="btn-secondary" href="<?php echo SITEURL; ?>">Home</a>
+    <a class="btn-secondary" href="<?php echo SITEURL; ?>manage-list.php">Manage Lists</a>
 
     <h3>Add List Page</h3>
     <p>
@@ -33,7 +35,7 @@
 
     <!--Form to Addd List Starts Here -->
     <form method="POST" action="">
-        <table>
+        <table class="tbl-half">
             <tr>
                 <td>List Name: </td>
                 <td><input type="text" name="list_name" placeholder="Type list name here" required="required" /></td>
@@ -44,7 +46,7 @@
                 <td><textarea name="list_description" placeholder="Type List Description Here"></textarea></td>
 
             </tr>
-                <td><input type="submit" name="submit" value="SAVE"></td>
+                <td><input class="btn-primary btn-lg" type="submit" name="submit" value="SAVE"></td>
             <tr>
 
             </tr>
@@ -53,6 +55,7 @@
     </form>
 
     <!--Form to Addd List Ends Here -->
+    </div>
 </body>
 </html>
 

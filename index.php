@@ -10,8 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager with PHP and MySQL</title>
+    <link rel="stylesheet" href="<?php echo SITEURL; ?>css/style.css" />
 </head>
 <body>
+    <div class="wrapper">
     <h1>TASK MANAGER</h1>
 
     <!-- Menu Starts Here -->
@@ -82,8 +84,8 @@
          ?>
      </p>
      <div class="all-tasks">
-         <a href="<?php SITEURL; ?>add-task.php">Add Task</a>
-         <table>
+         <a class="btn-primary" href="<?php SITEURL; ?>add-task.php">Add Task</a>
+         <table class="tbl-full">
              <tr>
                  <th>S.N.</th>
                  <th>Task Name</th>
@@ -133,8 +135,8 @@
                                 <td><?php echo $priority; ?> </td>
                                 <td><?php echo $deadline; ?></td>
                                 <td>
-                                    <a href="<?php echo SITEURL; ?>update-task.php?task_id=<?php echo $task_id; ?>">Update</a>   
-                                    <a href="<?php echo SITEURL; ?>delete-task.php?task_id=<?php echo $task_id; ?>">Delete</a>  
+                                    <a class="btn-update" href="<?php echo SITEURL; ?>update-task.php?task_id=<?php echo $task_id; ?>">Update</a>   
+                                    <a class="btn-delete" href="<?php echo SITEURL; ?>delete-task.php?task_id=<?php echo $task_id; ?>">Delete</a>  
                                 </td>
                             </tr>
 
@@ -158,6 +160,7 @@
      </div>
 
       <!-- Tasks Ends Here -->
+      </div>
     
 </body>
 </html>
